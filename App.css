@@ -1,0 +1,188 @@
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.side-navbar {
+  width: 250px;
+  height: 100%;
+  border-right: solid #f1f1f1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: width 0.3s;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+.low{
+  background-color: #DFA87433;
+  color:#D58D49;
+
+}
+.high{
+  background-color:#FFE0DF;
+  color:maroon;
+}
+.complete{
+  background-color: #83C29D33;
+  color: #68B266;
+}
+.collapsed {
+  width: 250px;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.toggle-icon {
+  font-size: 20px;
+}
+
+nav {
+  padding-top: 5px;
+}
+
+.abb{
+  width:'70%'
+}
+
+.search{
+  width: 60%;
+}
+.header{
+  font-size: 16px;
+  text-align: right;
+}
+
+.icon{
+  margin-left: 20px;
+}
+
+.collapse-profile{
+  display: none;
+}
+.collapse-profile-li{
+  display: none;
+}
+@media (max-width: 768px) {
+  .side-navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+  }
+
+  .search{
+    width: 100%;
+  }
+  .header{
+    font-size:12px;
+    text-align: left;
+  }
+  .collapsed nav{
+    display: none;
+  }
+ .abb{
+  width: 100%;
+ }
+ .icon{
+  display: none;
+ }
+
+ .collapse-profile{
+  display: inline-flex;
+}
+ .collapse-profile-li{
+  display: block;
+}
+}
+
+
+ul li{
+  list-style: none;
+  padding: 5%;
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 22px;
+color:'#787486';
+cursor:pointer;
+}
+
+
+
+
+#content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 100px;
+}
+#wrapper.toggled #content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+@media (min-width: 992px) {
+  #wrapper {
+    padding-left: 250px;
+  }
+  
+  
+  .collapsed #content-wrapper {
+    position: absolute;
+    margin-left: -190px;
+  }
+
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  .collapsed #content-wrapper {
+    position: relative;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .collapsed #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+  .collapsed #content-wrapper {
+    position: relative;
+    margin-right: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .collapsed #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+  .collapsed #content-wrapper {
+    position: relative;
+    margin-right: 50px;
+  }
+}
