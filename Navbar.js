@@ -2,8 +2,8 @@ import React from 'react'
 import './App.css';
 import { useState } from 'react';
 import { Colorfilter, Message, TaskSquare, Setting2, Profile2User, Category,AddSquare,More,Calendar2,NotificationBing, ArrowDown2 } from 'iconsax-react';
-import profile1 from './images/profile1.jpeg'
-import lamp from './images/light bulb.png' 
+import profile1 from './profile1.jpeg'
+import lamp from './light bulb.png' 
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = useState(false);
